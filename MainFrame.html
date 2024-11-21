@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掲示板アプリ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- プロフィール登録フォーム -->
+        <div id="profile-form">
+            <!-- フォームの内容はここに -->
+             <h2 class="mb-4">プロフィール登録</h2>
+                <form id="profileForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">ユーザー名</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">メールアドレス</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bio" class="form-label">自己紹介</label>
+                        <textarea class="form-control" id="bio" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">登録</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 掲示板 -->
+        <div id="bulletin-board" style="display: none;">
+            <h2 class="mb-4">掲示板</h2>
+            <form id="postForm" class="mb-4">
+                <div class="mb-3">
+                    <label for="postContent" class="form-label">投稿内容</label>
+                    <textarea class="form-control" id="postContent" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">投稿</button>
+            </form>
+        
+            <div id="posts-container">
+                <!-- 投稿はここに動的に追加されます -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
