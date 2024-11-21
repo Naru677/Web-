@@ -1,0 +1,94 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('photos/wood-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 3;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .card.add {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+    padding: 5px 0;
+  }
+  
+  .character {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  
+  .character img {
+    width: 100px;
+  }
+  
+  .speech-bubble {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
