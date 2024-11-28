@@ -1,0 +1,9 @@
+.hidden {
+    display: none;
+}
+
+.comment {
+    border-left: 2px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
