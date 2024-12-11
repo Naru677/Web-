@@ -94,4 +94,30 @@ ul {
 .kuuhaku{
   padding:1000px 0px
 }
-  
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.services {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
