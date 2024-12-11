@@ -2,93 +2,96 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('photos/wood-background.jpg') no-repeat center center fixed;
+    padding: 0;
+    background-color: rgba(8, 187, 242, 0.318);
     background-size: cover;
-    color: #fff;
+    background-attachment: fixed;
   }
   
-  .container {
+.top {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+  
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15px;
+  }
+ 
+  .saisaisho{
+    margin-top:5px;
+    padding:0px 0px 0px 10px ;
+    font-size:12px;
+  }
+.saisho {
+    font-size: 25px;
+    margin: 0;
+    padding: 0 20px 0px 40px;
   }
   
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    display: inline-block;
-    border-radius: 10px;
-  }
-  
-  main {
+.navigation {
     display: flex;
   }
   
-  .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    flex: 3;
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px;
   }
-  
-  .card {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  
-  .card.add {
-    font-size: 2em;
+
+ 
+
+.image {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
-    cursor: pointer;
-  }
-  
-  .sidebar {
-    flex: 1;
-    margin-left: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-    border-bottom: 1px dashed #fff;
-    padding: 5px 0;
-  }
-  
-  .character {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-  }
-  
-  .character img {
-    width: 100px;
-  }
-  
-  .speech-bubble {
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 0.9em;
-  }
+    overflow: hidden;
+}
+
+.image img {
+    width: 1220px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.kuuhaku{
+  padding:1000px 0px
+}
   
